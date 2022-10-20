@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darwin Contactos</title>
+    <link rel="icon" type="image/png" sizes="16x16" a href="../img/img de masaje.jpg">
+    <link rel="stylesheet" href="../stilos.css/stilos.css">
+
+</head>
+<body>
+    <header class="head" id="head__index">
+        <nav>
+            <div class="head__nav__principal">
+                <div class="head__nav__principal__titulo">
+                    <img src="../img/img de masaje.jpg" alt="masaje">
+                    <h1>DARWIN_Relax</h1>
+                    <p class="head__nav__principal__titulo__p">EQUILIBRIO - RELAJACION</p>
+                </div>    
+                <div class="nav">
+                    <ul class="link">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="./tarifas.html">Reserva-Tarifas</a></li>
+                        <li><a href="./sobre_mi.html">Sobre Mi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <div id="principal">
+                <div id="form">
+                    <h2>Dejanos tus datos para contactarte</h2>
+                    <div class="contacto__nombre">
+                        <label for="nombre_apellido">Nombre y Apellido</label>
+                        <input type="text" name="nombre_apellido" id="nombre_apellido" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="contacto__tel">
+                        <label for="telefono">Telefono</label>
+                        <input type="number" name="telefono" id="telefono" placeholder="Tu Telefono" required>
+                    </div>
+                    <div class="contacto__mail">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="contacto__servicio">
+                        <p>Que de Servicio Buscas</p>
+                        <span>Consultorio</span>
+                        <input type="radio" name="servicio" id="consultario">
+                        <span>Domicilio</span>
+                        <input type="radio" name="servicio" id="domicilio">
+                    </div>
+                    <div class="contacto__mensaje">
+                        <p>Deje su consulta</p>
+                        <textarea name="consulta" id="deje su consulta" cols="38" rows="10"></textarea>
+                    </div>
+                    <div class="contacto__boton">
+                        <input type="submit" value="Enviar">
+                        <input type="submit" value="Reset">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer class="footermi">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem alias sed, corporis error nulla a sint explicabo nisi iste voluptate iusto qui, eveniet non? Ab veniam corporis facere ipsam voluptatum!</p>
+            <div class="footermi__div">
+                <a href="#">Volver al Inicio</a>
+                <div class="footer__div__img"><a href="https://www.instagram.com/invites/contact/?i=11nitxhim9tmo&utm_content=mva9o3m" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png"></a></div>
+            </div>    
+    </footer>
+</body>
+</html>
+
+#servicios{
+    height: auto
+    width: 50vw;
+}
+.headservi {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/img\ head\ 1.jpg);
+    background-size:contain;
+    background-repeat:round no-repeat;
+    border-bottom: 5px solid rgb(121, 179, 140);
+}
+.headservi img{
+    margin: 3px;
+}
+.headservi h1{
+    text-align: center;
+    margin:10px
+    padding: 100px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    color: rgb(34, 216, 237);
+}
+.headservi p{
+    text-align: center;
+    color:rgb(34, 216, 237);
+    font-family: 'Dancing Script', cursive;
+    font-size: 15px;
+    padding-top: 180PX;
+    margin-right: 100px;
+}
