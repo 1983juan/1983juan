@@ -60,7 +60,7 @@ a{
     color: white;
     font-size: 30px;
 }
-<!*--main-->
+<!--main-->
 main{
     display: grid;
 }
@@ -139,7 +139,7 @@ main section{
     color: white;
     font-size: 30px;
 }
-<!*--footer-->
+<!--footer-->
 
 #footer{
     display: grid;
@@ -214,7 +214,6 @@ main section{
         font-size: 55px;
     }
     .head__nav__link ul li{
-        display: inline-block;
         float: right;
         margin-right: 20px;
         
