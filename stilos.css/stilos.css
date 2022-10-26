@@ -11,6 +11,9 @@ p{
 a{
     color:rgb(6, 57, 59);
 }
+.t-center{
+    text-align: center;
+}
 #body__grid{
     display: grid;
     grid-template-columns: 1fr;
@@ -171,17 +174,23 @@ main section{
     align-items: center;
 }
 .footer__div a {
-    height: 80px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
     width: auto;
     padding-right: 20px;
     text-align: center;
     text-decoration: none;
+    font-size: 20px;
     color: rgb(85, 125, 138)
 }
+.footer__div a:hover{
+    color: #e58888;
+    font-size: 35px;
+}
 .footer__div a img{
-    height: 80px;
+    height: 50px;
     width: auto;
-    margin-left: 20px;
 }
 
 
