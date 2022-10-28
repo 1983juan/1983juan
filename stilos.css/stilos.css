@@ -56,6 +56,31 @@ a{
     font-size: 25px;
     font-family: 'Fuzzy Bubbles', cursive;
 }
+.head__nav__link ul li{
+	-webkit-animation: rotate-vert-center 0.8s ;
+	        animation: rotate-vert-center 0.8s ;
+}
+@-webkit-keyframes rotate-vert-center {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+  }
+  @keyframes rotate-vert-center {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+  }
+  
 .head__nav__link ul li a:hover{
     background-color: #0093E9;
     background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
@@ -193,7 +218,6 @@ main section{
     width: auto;
 }
 
-
 @media (min-width: 768px){
     .head__nav__titulo{
         display: flex;
@@ -230,15 +254,84 @@ main section{
     .head__nav__link ul li a{
         text-align: right;
     }
+    .footer_div__a {
+            -webkit-animation: shake-top 3s 7;
+                    animation: shake-top 3s 7;
+        }
+ @-webkit-keyframes shake-top {
+    0%,
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+    }
+    10% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: rotate(-4deg);
+              transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+      -webkit-transform: rotate(4deg);
+              transform: rotate(4deg);
+    }
+    80% {
+      -webkit-transform: rotate(-2deg);
+              transform: rotate(-2deg);
+    }
+    90% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+  }
+  @keyframes shake-top {
+    0%,
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: 50% 0;
+              transform-origin: 50% 0;
+    }
+    10% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: rotate(-4deg);
+              transform: rotate(-4deg);
+    }
+    30%,
+    50%,
+    70% {
+      -webkit-transform: rotate(4deg);
+              transform: rotate(4deg);
+    }
+    80% {
+      -webkit-transform: rotate(-2deg);
+              transform: rotate(-2deg);
+    }
+    90% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+  }
+  
+  
 }
+
 
 <!--sobre mi-->
 
 .tamanio_img{
-    height:400px;
-    width:400px;
-}
-.tamanio_img1{
-    height: 300px;
-    width: 300px;
+    height:200px;
+    width:200px;
 }
