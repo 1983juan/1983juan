@@ -5,61 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darwin Sobre MI</title>
+    <!-- BOOSTRAP-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="16x16" a href="../img/img de masaje.jpg">
+    <!-- CSS MAIN-->
     <link rel="stylesheet" href="../stilos.css/stilos.css">
 </head>
-<body>
-    <header class="head" id="head__index">
-        <nav>
-            <div class="head__nav__principal">
-                <div class="head__nav__principal__titulo">
-                    <img src="../img/img de masaje.jpg" alt="masaje">
-                    <h1>DARWIN_Relax</h1>
-                    <p class="head__nav__principal__titulo__p">EQUILIBRIO - RELAJACION</p>
-                </div>    
-                <div class="nav">
-                    <ul class="link">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="./servicios.html">Servicios</a></li>
-                        <li><a href="./tarifas.html">Reserva-Tarifas</a></li>
-                        <li><a href="./contactos.html">Contactos</a></li>
-                    </ul>
-                </div>
+<body id="body__grid">
+    <header class="head">
+        <nav class="head__nav">
+            <div class="head__nav__titulo">
+                <img src="../img/img de masaje.jpg" alt="masaje">
+                <h1 class="t-center">DARWIN_Relax</h1>
+                <p class="t-center">EQUILIBRIO - RELAJACION</p>
+            </div>    
+            <div class="head__nav__link">
+                <ul class="link t-center">
+                    <li><a href="./pages/contactos.html">Contactos</a></li>
+                    <li><a href="./pages/sobre_mi.html">Sobre Mi</a></li>
+                    <li><a href="./pages/tarifas.html">Reserva-Tarifas</a></li>
+                    <li><a href="./pages/servicios.html">Servicios</a></li>
+                </ul>
             </div>
         </nav>
     </header>
     <main>
         <section>
-            <div class="h2">
-                <h2>Walter Altamirano</h2>
+            <div class="text-light">
+                <h2 class="t-center">Walter Daniel Altamirano</h2>
             </div>
             <article>
-                <div class="contain">
-                    <div class="lore">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, quaerat! Deleniti voluptatem provident assumenda deserunt. Possimus, tempore, autem animi laboriosam perferendis quasi obcaecati eligendi a necessitatibus, beatae at quam. Deserunt.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione ea numquam fugit et provident, eius earum delectus vel enim cumque suscipit atque itaque incidunt, quas doloribus porro repudiandae, ut aperiam?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione ea numquam fugit et provident, eius earum delectus vel enim cumque suscipit atque itaque incidunt, quas doloribus porro repudiandae, ut aperiam?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione ea numquam fugit et provident, eius earum delectus vel enim cumque suscipit atque itaque incidunt, quas doloribus porro repudiandae, ut aperiam?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione ea numquam fugit et provident, eius earum delectus vel enim cumque suscipit atque itaque incidunt, quas doloribus porro repudiandae, ut aperiam?</p>
-                    </div>
-                    <div class="fotostitulo">
-                            <div class="imgwal">
-                                <img src="../img/fotowalter.jpg" alt="foto_walter">
-                            </div>        
-                            <div class="titulo">
-                                <img src="../img/diploma (1).jpeg" alt="titulo">
-                                <img src="../img/diploma (2).jpeg" alt="titulo">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, quaerat! Deleniti voluptatem provident assumenda deserunt. Possimus, tempore, autem animi laboriosam perferendis quasi obcaecati eligendi a necessitatibus, beatae at quam. Deserunt.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione ea numquam fugit et provident, eius earum delectus vel enim cumque suscipit atque itaque incidunt, quas doloribus porro repudiandae, ut aperiam?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione ea numquam fugit et provident, eius earum delectus vel enim cumque suscipit atque itaque incidunt, quas doloribus porro repudiandae, ut aperiam?</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div id="carouselExampleControls" class="carousel slide container tamanio_img" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active tamanio_img1">
+                                        <img src="../img/fotowalter.jpg" class="d-block w-100 h-100" alt="foto_walter">
+                                    </div>
+                                    <div class="carousel-item tamanio_img">
+                                        <img src="../img/diploma (1).jpeg" class="d-block w-100 h-100" alt="titulo">
+                                    </div>
+                                    <div class="carousel-item tamanio_img">
+                                        <img src="../img/diploma (2).jpeg" class="d-block w-100 h-100" alt="titulo">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                                </button>
                             </div>
-                    </div>    
-                </div>
-            </article>
+                        </div>
+                    </div>
         </section>
     </main>
-    <footer class="footermi">
+    <footer id="footer">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem alias sed, corporis error nulla a sint explicabo nisi iste voluptate iusto qui, eveniet non? Ab veniam corporis facere ipsam voluptatum!</p>
-            <div class="footermi__div">
-                <a href="#">Volver al Inicio</a>
-                <div class="footer__div__img"><a href="https://www.instagram.com/invites/contact/?i=11nitxhim9tmo&utm_content=mva9o3m" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png"></a></div>
+            <div class="footer__div">
+                <span><a href="#head__index">Volver al Inicio</a></span>
+                <a href="https://www.instagram.com/invites/contact/?i=11nitxhim9tmo&utm_content=mva9o3m" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png"></a>
+                <a href="https://ar.linkedin.com/" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAACJ0lEQVRoge2XTWsTURSGn3Mn6WQVwUXFgIuC+EHxayHWj18guIi46o8QWhGrtbWWgi1CF9W/4E60GxHdiAiuRIgiogERIthNq1Sa2Jre40L8IDPpJNPOxMB9lueec3gfJrmZgMPh6GoktDr7ZrtZq48DRaAALIDctzZ7nSv7F9MMGEVQ4Ff458DekP731rfHGDryNfFkLWIChbX6GOHhAfaYVTOabKT2CAgAZyNmikkEiUuYwM6ImV1JBIlLUEBY2HBC+ZxUmDgEBZR7ERN3kwoTh4CA7clMAuUm/W9tj51KNlJ7BJ/AcP+Szfw4gept4BNQBz6CzFqVk//TFepwbAGBVwkzXdKoITtyaPNzMy8LRr1BgTMq9KH0AosCHxR9YOveHa4eqETtzEQ1bDlzZd+s1EZRHQGyCvBXvaBQADllMvYaM6VbtpYfZ6Lve7N1Yb/EyTH9YptXrT1DdAzIRnTnUC56ueUn3Cz1NmtKVcCT7ENFj7YzozDgWeaZK/th56kKqHI87pyprkyGnaX7EdoUcp6p14EXyS4SIGc8HWwspi8gVEQ5Z8XPW/HzIlIE3rU0Knq6sZbuNSpUbDZzmOH+pd+ldZjnxqunxmgJ3fi/hsLuxlqqT0AsQ/+G/8Plg1/EyoUWVuxoLKQqsG78x03PVquPWljhNRbS/Q5c2vet6dnEwHKcld10C4XiBDqNE+g0TqDTOIFO4wQ6jRPoNF0v4HA4upyfMJeU0xZf9lEAAAAASUVORK5CYII="></a>
+                
             </div>    
     </footer>
 </body>

@@ -231,3 +231,14 @@ main section{
         text-align: right;
     }
 }
+
+<!--sobre mi-->
+
+.tamanio_img{
+    height:400px;
+    width:400px;
+}
+.tamanio_img1{
+    height: 300px;
+    width: 300px;
+}
