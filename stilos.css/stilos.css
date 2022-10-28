@@ -57,8 +57,8 @@ a{
     font-family: 'Fuzzy Bubbles', cursive;
 }
 .head__nav__link ul li{
-	-webkit-animation: rotate-vert-center 0.8s ;
-	        animation: rotate-vert-center 0.8s ;
+	-webkit-animation: rotate-vert-center 1.5s ;
+	        animation: rotate-vert-center 1.5s ;
 }
 @-webkit-keyframes rotate-vert-center {
     0% {
