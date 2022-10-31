@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darwin Contactos</title>
-    <link rel="icon" type="image/png" sizes="16x16" a href="../img/img de masaje.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" a href="../img/1000_F_136401657_ml40mQdZKOGEUv0qevenTlVx2c1jQa12.jpg">
+    <!-- BOOSTRAP-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- CSS MAIN-->
     <link rel="stylesheet" href="../stilos.css/stilos.css">
 </head>
 <body id="body__grid">
@@ -26,46 +32,53 @@
             </div>
         </nav>
     </header>
-    <main>
-        <form>
-            <div id="principal">
-                <div id="form">
-                    <h2>Dejanos tus datos para contactarte</h2>
-                    <div class="contacto__nombre">
-                        <label for="nombre_apellido">Nombre y Apellido</label>
-                        <input type="text" name="nombre_apellido" id="nombre_apellido" placeholder="Tu Nombre" required>
+    <main class="main">
+        <section>
+            <h2>Dejanos tus datos para contactarte</h2>
+            <div class="row">
+                <div id="principal" class="col-sm-12 col-md-7">
+                    <div class="mb-3 col-sm-12 col-md-7">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                        <input type="nombre_apellido" class="form-control" id="exampleFormControlInput1" placeholder="Tu Nombre" required>
                     </div>
-                    <div class="contacto__tel">
-                        <label for="telefono">Telefono</label>
-                        <input type="number" name="telefono" id="telefono" placeholder="Tu Telefono" required>
+                    <div class="mb-3 col-sm-12 col-md-7">
+                        <label for="exampleFormControlInput1" class="form-label">Telefono de Contacto</label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Tu Numero" required> 
+                    </div>           
+                    <div class="mb-3 col-sm-12 col-md-7">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                     </div>
-                    <div class="contacto__mail">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="E-mail">
-                    </div>
-                    <div class="contacto__servicio">
+                    <div class="contacto__servicio col-sm-12 col-md-7">
                         <p>Que de Servicio Buscas</p>
                         <span>Consultorio</span>
                         <input type="radio" name="servicio" id="consultario">
                         <span>Domicilio</span>
                         <input type="radio" name="servicio" id="domicilio">
                     </div>
-                    <div class="contacto__mensaje">
-                        <p>Deje su consulta</p>
-                        <textarea name="consulta" id="deje su consulta" cols="38" rows="10"></textarea>
+                    <div class="mb-3 col-sm-12 col-md-7">
+                        <label for="exampleFormControlTextarea1" class="form-label h5">DEJANOS TU CONSULTA</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     <div class="contacto__boton">
                         <input type="submit" value="Enviar">
                         <input type="submit" value="Reset">
-                    </div>
+                    </div>   
                 </div>
-            </div>
-        </form>
+                <div class="col-sm-12 col-md-5 position-relative animacion">
+                    <div class="position-absolute bottom-50 end-50 d-none d-md-block"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5i2A-6tDBF1YYICOfeWa6GMiCQUav9BLjeQ&usqp=CAU"  alt=""></div>
+                </div>
+            </div>           
+        </section>
     </main>
     <footer id="footer">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem alias sed, corporis error nulla a sint explicabo nisi iste voluptate iusto qui, eveniet non? Ab veniam corporis facere ipsam voluptatum!</p>
             <div class="footer__div">
-                <span><a href="#head__index">Volver al Inicio</a></span>
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#head__contactos" class="btn btn-primary">INICIO</a>
+                    </div>
+                </div>
                 <div class="footer__div__a">
                     <a href="https://www.instagram.com/invites/contact/?i=11nitxhim9tmo&utm_content=mva9o3m" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384886.png"></a>
                     <a href="https://m.facebook.com/login/?locale=es_ES" target="_blank"><img src="https://img.freepik.com/psd-gratis/cuadrado-3d-logotipo-facebook_125540-1565.jpg?w=1060&t=st=1667006348~exp=1667006948~hmac=785f2675f03ae3d8794e5c15474aa77102dce5efa3bf5a95582f412efbc7dd30"></a>

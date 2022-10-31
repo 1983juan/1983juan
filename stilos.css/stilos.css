@@ -142,7 +142,7 @@ a{
     justify-self: center;
     padding: 5px;
     margin-top: 10px;
-    width: 150px;
+    width: 170px;
     height: auto;
     font-size: 18px;
     font-family: 'Fuzzy Bubbles', cursive;
@@ -167,8 +167,6 @@ a{
     color: white;
     font-size: 30px;
 }
-<!--footer-->
-
 #footer{
     display: grid;
     grid-template-areas: 
@@ -176,6 +174,10 @@ a{
     "a";
     grid-template-columns: auto;
     grid-template-rows: auto auto;
+    width: auto;
+    height: auto;
+    background-image: linear-gradient(135deg, #0093E9 0%, #80D0C7 50%, #ffffff 100%);
+    margin-top: 10px;
 }
 #footer p{
     grid-area: p;
@@ -184,8 +186,8 @@ a{
     font-size: 20px;
     font-family: 'Fuzzy Bubbles', cursive;
     border-top: 3px solid rgb(85, 125, 138);
-    color: rgb(85, 125, 138);
-}
+    color: rgb(4, 63, 35);
+    }
 .footer__div {
     grid-area: a;
     text-decoration: none;
@@ -202,23 +204,14 @@ a{
     display: block;
     height: 40px;
     width: auto;
-    padding-right: 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    color: rgb(85, 125, 138)    
-}
-.footer__div a:hover{
-    color: #e58888;
-    font-size: 35px;
 }
 .footer__div__a a img{
-    height: 50px;
-    width: auto;
+    height: 35px;
+    width: auto; 
 }
 .tamanio_img{
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 380px;
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -259,10 +252,32 @@ a{
     .head__nav__link ul li a{
         text-align: right;
     }
-    .footer__div__a {
+  .footer__div__a {
             -webkit-animation: shake-top 3s 7;
                     animation: shake-top 3s 7;
-        }
+    }
+    .main {
+      -webkit-animation: bg-pan-bl 8s both;
+              animation: bg-pan-bl 8s both;
+    }
+    @-webkit-keyframes bg-pan-bl {
+      0% {
+        background-position: 100% 0%;
+      }
+      100% {
+        background-position: 0% 100%;
+      }
+    }
+    @keyframes bg-pan-bl {
+      0% {
+        background-position: 100% 0%;
+      }
+      100% {
+        background-position: 0% 100%;
+      }
+    }
+    
+    
  @-webkit-keyframes shake-top {
     0%,
     100% {
@@ -333,7 +348,7 @@ a{
 	-webkit-animation: rotate-diagonal-1 1.5s linear both;
 	        animation: rotate-diagonal-1 1.5s linear both;
   }
-@-webkit-keyframes rotate-diagonal-1 {
+  @-webkit-keyframes rotate-diagonal-1 {
     0% {
       -webkit-transform: rotate3d(1, 1, 0, 0deg);
               transform: rotate3d(1, 1, 0, 0deg);
@@ -361,11 +376,39 @@ a{
               transform: rotate3d(1, 1, 0, -360deg);
     }
   }
-  #imagen video {
-    height: 400px;
+  #imagen img{
+    height: 300px;
     width: auto;
-  } 
+  }
+  #imagen video {
+    height: 500px;
+    width: auto;
+  }
+  .animacion {
+    -webkit-animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse ;
+            animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse ;
+  }
+  @-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+  }
+
+
+    
 }
-
-<!--servicios-->
-
