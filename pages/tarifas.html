@@ -33,94 +33,125 @@
                 </div>
             </div>
         </nav>
-    </header>    
-    <main>
-        <div class="reservas">
-            <div  class="divprincipal">
-                    <h2>Reserva tu Turno</h2>
-                    <h3>Datos Personales</h3>
-                <form class="div__label">
-                    <div>
-                        <div>
-                            <label for="nombre">Nombre y Apellido</label>
-                            <input type="text" name="nombre" id="nombre" placeholder="Tu Nombre y Apellido" required>
-                            <label for="telefono">Telefono</label>
-                            <input type="number" name="telefono" id="telefono" placeholder="Tu Telefono" required>
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email" placeholder="tu E-mail">
-                            <p>Que de Servicio Buscas</p>
-                            <span>Consultorio</span>
+    </header> 
+    <main class="main">
+        <section>
+            <div class="container">
+                <h2 class="text-primary text-center">Reserva tu Turno</h2>
+                <div class="row">
+                    <div id="principal" class="col-sm-12 col-md-6">
+                        <div class="mb-3 col-sm-12 col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label text-primary">Nombre y Apellido</label>
+                            <input type="nombre_apellido" class="form-control" id="exampleFormControlInput1" placeholder="Tu Nombre" required>
+                        </div>
+                        <div class="mb-3 col-sm-12 col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label text-primary">Telefono de Contacto</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Tu Numero" required> 
+                        </div>           
+                        <div class="mb-3 col-sm-12 col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label text-primary">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="contacto__servicio col-sm-12 col-md-6">
+                            <p class="text-primary">Tipo de Servicio Buscas</p>
+                            <span class="text-primary">Consultorio</span>
                             <input type="radio" name="servicio" id="consultario">
-                            <span>Domicilio</span>
+                            <span class="text-primary">Domicilio</span>
                             <input type="radio" name="servicio" id="domicilio">
                         </div>
-                        <div>
-                            <label for="edad">Edad</label>
-                            <input type="number" name="edad" id="edad" placeholder="Tu Edad" required>
+                        <div class="mb-3 col-sm-12 col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label text-primary">Tu Edad</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Tu Edad" required> 
                         </div>
-                        <div>
-                            <label for="peso">Peso</label>
-                            <input type="number" name="peso" id="peso" placeholder="Tu Peso" required>
+                        <div class="mb-3 col-sm-12 col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label text-primary">Cuanto Pesas</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Tu Peso" required> 
                         </div>
-                        <div>
-                            <span>Enfermedades</span>
-                            <select name="select">
-                                <option value="opcion"></optin>
-                                <option value="opcion">Algun tipo de tumor</optin>
-                                <option value="opcion">Presión Alta</optin>
-                                <option value="opcion">Presión Baja</optin>
-                                <option value="opcion">Berrugas</optin>
-                                <option value="opcion">Hongos</optin>
-                                <option value="opcion">Varices</optin>
-                                <option value="opcion">Otras</optin>
-                                <option value="opcion">Ninguna</optin>
-                            </select>    
+                        <div class="mb-3 col-sm-12 col-md-6"> 
+                            <span class="text-primary">Enfermedades</span>
+                            <select class="form-select text-primary" aria-label="Default select example">
+                                <option selected>Seleccione una</option>
+                                <option value="1">Algun tipo de tumor</option>
+                                <option value="2">Presión Alta</option>
+                                <option value="3">Presión Baja</option>
+                                <option value="3">Berrugas</option>
+                                <option value="3">Hongos</option>
+                                <option value="3">Varices</option>
+                                <option value="3">Otras</option>
+                                <option value="3">Ninguna</option>
+                            </select>
                         </div>
-                        <div>
-                            <span>Tatuajes</span>
-                                <select name="tatuajes">
-                                    <option value="si">si</option>
-                                    <option value="si">no</optin>
-                                </select>
+                        <div class="contacto__servicio col-sm-12 col-md-6">
+                            <p class="text-primary">Tatuajes</p>
+                            <span class="text-primary">Si</span>
+                            <input type="radio" name="servicio" id="si">
+                            <span class="text-primary">NO</span>
+                            <input type="radio" name="servicio" id="no">
                         </div>
-                        <div class="value">
+                        <div class="contacto__boton">
                             <input type="submit" value="Enviar">
                             <input type="submit" value="Reset">
+                        </div>  
+                </div>           
+                <div class="col-sm-12 col-md-6 text-center d-none d-lg-block">
+                    <div class="row">
+                    <div class="col text-primary fs-2">
+                    Tipo de Masaje
+                    </div>
+                    <div class="col text-primary fs-2">
+                    Valor x 30´
+                    </div>
+                    <div class="col text-primary fs-2">
+                    Valor x 50´
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col text-primary fs-2">
+                        Relajante
+                    </div>
+                    <div class="col text-primary fs-2">
+                        $2000.-
+                    </div>
+                    <div class="col text-primary fs-2">
+                        $2500.-
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-primary fs-2">
+                            Descontr.
+                        </div>
+                        <div class="col text-primary fs-2">
+                            $2500.-
+                        </div>
+                        <div class="col text-primary fs-2">
+                            $3000.-
                         </div>
                     </div>
-                </form>
-            </div>   
-            <div class="tabla">
-                <table border="" bgcolor="grey" with="900">
-                    <tr> 
-                        <th bgcolor="red" with="100">Tipos de masajes</th>
-                        <th bgcolor="red" with="100">$x 30 minutos</th>
-                        <th bgcolor="red" with="100">$x 50 minutos</th>
-                    </tr>
-                    <tr>
-                        <th with="100">Relajante</th>
-                        <th with="100">$2000</th>
-                        <th with="100">$2500</th>
-                    </tr>
-                    <tr>
-                        <th with="100">Descontracturante</th>
-                        <th with="100">$2500</th>
-                        <th with="100">$3000</th>
-                    </tr>
-                    <tr>
-                        <th with="100">Sedativos</th>
-                        <th with="100">$2000</th>
-                        <th with="100">$2200</th>
-                    </tr>
-
-                    <tr>
-                        <th with="100">Vendas Frias</th>
-                        <th with="100">$2000</th>
-                        <th with="100">$2200</th>
-                    </tr>
-                </table>
+                    <div class="row">
+                        <div class="col text-primary fs-2">
+                            Sedativos
+                        </div>
+                        <div class="col text-primary fs-2">
+                            $2000.-
+                        </div>
+                        <div class="col text-primary fs-2">
+                            $2200.-
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-primary fs-2">
+                            Vendas Frias
+                        </div>
+                        <div class="col text-primary fs-2">
+                            $2000.-
+                        </div>
+                        <div class="col text-primary fs-2">
+                            $2200.-
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>  
+        </section>
     </main>
     <footer id="footer">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem alias sed, corporis error nulla a sint explicabo nisi iste voluptate iusto qui, eveniet non? Ab veniam corporis facere ipsam voluptatum!</p>
