@@ -89,10 +89,10 @@ a{
     font-size: 30px;
 }
 <!--main-->
-main{
+.main{
     display: grid;
 }
-main section{
+.main{
     background-image: url(../img/img\ header.jpg);
     background-size: cover;
     margin-top: 10px;
@@ -112,14 +112,14 @@ main section{
 }
 .imagen__video{
     grid-area: video;
-    height: 350px;
+    height: 200px;
     width: auto;
     align-self: flex-start;
     justify-self:center ;
     border-radius: 10%;
 }
 .imagen__foto{
-    height: 250px;
+    height: 150px;
     width: auto;
     padding: 5px;
     align-self: center;
@@ -189,7 +189,7 @@ main section{
 .footer__div {
     grid-area: a;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Fuzzy Bubbles', cursive;
     justify-content: center;
 }
@@ -198,24 +198,29 @@ main section{
     justify-content: center;
     align-items: center;
 }
-.footer__div a {
-    display: flex;
-    justify-content: center;
+.footer__div__a a{
+    display: block;
     height: 40px;
     width: auto;
     padding-right: 20px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    color: rgb(85, 125, 138)
+    color: rgb(85, 125, 138)    
 }
 .footer__div a:hover{
     color: #e58888;
     font-size: 35px;
 }
-.footer__div a img{
+.footer__div__a a img{
     height: 50px;
     width: auto;
+}
+.tamanio_img{
+    width: 400px;
+    height: 300px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 @media (min-width: 768px){
@@ -254,7 +259,7 @@ main section{
     .head__nav__link ul li a{
         text-align: right;
     }
-    .footer_div__a {
+    .footer__div__a {
             -webkit-animation: shake-top 3s 7;
                     animation: shake-top 3s 7;
         }
@@ -324,14 +329,43 @@ main section{
               transform: rotate(2deg);
     }
   }
-  
-  
+  #imagen img {
+	-webkit-animation: rotate-diagonal-1 1.5s linear both;
+	        animation: rotate-diagonal-1 1.5s linear both;
+  }
+@-webkit-keyframes rotate-diagonal-1 {
+    0% {
+      -webkit-transform: rotate3d(1, 1, 0, 0deg);
+              transform: rotate3d(1, 1, 0, 0deg);
+    }
+    50% {
+      -webkit-transform: rotate3d(1, 1, 0, -180deg);
+              transform: rotate3d(1, 1, 0, -180deg);
+    }
+    100% {
+      -webkit-transform: rotate3d(1, 1, 0, -360deg);
+              transform: rotate3d(1, 1, 0, -360deg);
+    }
+  }
+  @keyframes rotate-diagonal-1 {
+    0% {
+      -webkit-transform: rotate3d(1, 1, 0, 0deg);
+              transform: rotate3d(1, 1, 0, 0deg);
+    }
+    50% {
+      -webkit-transform: rotate3d(1, 1, 0, -180deg);
+              transform: rotate3d(1, 1, 0, -180deg);
+    }
+    100% {
+      -webkit-transform: rotate3d(1, 1, 0, -360deg);
+              transform: rotate3d(1, 1, 0, -360deg);
+    }
+  }
+  #imagen video {
+    height: 400px;
+    width: auto;
+  } 
 }
 
+<!--servicios-->
 
-<!--sobre mi-->
-
-.tamanio_img{
-    height:200px;
-    width:200px;
-}
