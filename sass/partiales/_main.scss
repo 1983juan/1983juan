@@ -1,0 +1,93 @@
+@use "../base/variable";
+@use "../base/globales";
+
+@mixin bg-main {
+    background-image: url(/img/img\ header.jpg);
+    background-size: cover;
+    border-radius: 2%;    
+}
+
+/** mobile **/
+.main{
+    @include bg-main;
+    display: grid;
+    section{
+        article{
+            #imagen{
+                text-align: center;
+                width: 100vw;
+                max-width: 768px;
+                min-width: 320px;
+                overflow: hidden;
+                position: relative;
+                box-sizing: border-box;
+                padding: 10px;
+                grid-template-areas: 
+                "imagen"
+                "video";
+                grid-template-columns: auto;
+                grid-template-rows: auto auto;
+                img{
+                    grid-area: imagen;
+                    width: 30vw;
+                    padding: 10px;
+                }
+                video{
+                    grid-area: video;
+                    width: 80%;
+                    overflow: hidden;
+                    position: relative;
+                    box-sizing: border-box;
+                    padding: 10px; 
+                }
+            }
+            #resert{
+                display: grid;
+                grid-template-areas: 
+                "button"
+                "a";
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto;
+                button{
+                    grid-area: button;
+                    align-self: center;
+                    justify-self: center;
+                    text-align: center;
+                    padding: 5px;
+                    margin-top: 10px;
+                    width: 140px;
+                    height: 40px;
+                    font-size: (variable.$tamanoh)/3;
+                    font-family: 'Fuzzy Bubbles', cursive;
+                    border-bottom: 8px solid rgb(56, 101, 116);
+                    border-radius: 5%;
+                    &:hover{
+                        background-color: #0093E9;
+                        background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
+                        border-radius: 5%;
+                        font-size: 25px;
+                    }
+                }
+                a{
+                    grid-area: a;
+                    width: 50vw;
+                    padding: 10px;
+                    justify-self: center;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-family: 'Fuzzy Bubbles', cursive;
+                    color: rgb(220, 96, 30);
+                    &:hover{
+                        background-color: #0093E9;
+                        background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
+                        border-radius: 5%;
+                        color: white;
+                        font-size: 25px;
+                    }
+                }
+            }
+
+        }
+    }
+}
