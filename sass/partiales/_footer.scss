@@ -10,8 +10,9 @@
     "buttom";
     background-color: map-get(globales.$backgrand, bg-color );
     background-image: map-get(globales.$backgrand, bg-image );
-    border-radius: map-get(globales.$backgrand, b-radius );
     width: 100vw;
+    margin: 0px;
+    padding: 0%;
     .footer__p{
         grid-area: p;
         width: 100vw;
@@ -20,7 +21,6 @@
         overflow: hidden;
         position: relative;
         box-sizing: border-box;
-        margin: 5px;
         p{
             text-align: variable.$center;
             font-size: (variable.$tamanoh)/3;
@@ -41,21 +41,21 @@
         box-sizing: border-box; 
         .card{
             button{
-                justify-self: center;
-                align-self: center;
                 padding: 5px;
-                margin-top: 10px;
                 width: 140px;
                 height: 40px;
                 font-size: (variable.$tamanoh)/3;
                 font-family: 'Fuzzy Bubbles', cursive;
                 border-bottom: 8px solid rgb(56, 101, 116);
                 border-radius: 5%;
-                &:hover{
-                    background-color: #0093E9;
-                    background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
-                    border-radius: 5%;
-                    font-size: 20px;
+                a{
+                    font-family: variable.$tipoletra;              
+                    &:hover{
+                        background-color: #0093E9;
+                        background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
+                        border-radius: 5%;
+                        font-size: 20px;
+                    }
                 }
             }         
         }
@@ -87,7 +87,6 @@
         overflow: hidden;
         position: relative;
         box-sizing: border-box;
-        margin: 5px; 
         background-color: black;
         .footer__p{
             justify-self: center;
@@ -107,7 +106,6 @@
                 justify-content:right;
                 width: 25vw;
                 height: 5vw;
-                margin-top: 20px;
                 button {
                     a{
                     font-size: 20px;
@@ -125,6 +123,7 @@
                 width: 20vw;
                 height: 20vw;
                 ul li {
+                    float: right;
                     display: flex;
                     align-self: center;
                     justify-content: center;

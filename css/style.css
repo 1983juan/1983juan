@@ -1,16 +1,19 @@
 /** mobile **/
-.head {
-  background-color: red;
+#body__grid {
+  margin: 0px;
+  padding: 0%;
 }
-.head .head__nav {
+#body__grid .head {
+  width: 100vw;
+}
+#body__grid .head .head__nav {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto;
   background-color: #0093E9;
   background-image: linear-gradient(135deg, #0093E9 0%, #80D0C7 50%, #ffffff 100%);
-  border-radius: 2%;
 }
-.head .head__nav .head__nav__titulo {
+#body__grid .head .head__nav .head__nav__titulo {
   text-align: center;
   width: 100vw;
   max-width: 768px;
@@ -20,7 +23,7 @@
   box-sizing: border-box;
   padding: 10px;
 }
-.head .head__nav .head__nav__titulo img {
+#body__grid .head .head__nav .head__nav__titulo img {
   height: 250px;
   width: auto;
   border-radius: 50%;
@@ -37,32 +40,32 @@
     transform: scale(0.8) rotate3d(1, 1, 0, -360deg);
   }
 }
-.head .head__nav .head__nav__titulo h1 {
+#body__grid .head .head__nav .head__nav__titulo h1 {
   color: rgb(8, 109, 112);
   font-family: "Fuzzy Bubbles", cursive;
   font-size: 40px;
 }
-.head .head__nav .head__nav__titulo p {
+#body__grid .head .head__nav .head__nav__titulo p {
   color: rgb(8, 109, 112);
   font-family: "Fuzzy Bubbles", cursive;
   font-size: 16px;
 }
-.head .head__nav .head__nav__link {
+#body__grid .head .head__nav .head__nav__link {
   text-align: center;
   max-width: 768px;
   min-width: 320px;
 }
-.head .head__nav .head__nav__link ul li {
+#body__grid .head .head__nav .head__nav__link ul li {
   list-style: none;
   padding: 5px;
 }
-.head .head__nav .head__nav__link ul li a {
+#body__grid .head .head__nav .head__nav__link ul li a {
   text-decoration: none;
   font-size: 20px;
   font-family: "Fuzzy Bubbles", cursive;
   color: rgb(8, 109, 112);
 }
-.head .head__nav .head__nav__link ul li a:hover {
+#body__grid .head .head__nav .head__nav__link ul li a:hover {
   background-color: #0093E9;
   background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
   border-radius: 10%;
@@ -70,7 +73,7 @@
   font-size: 25px;
 }
 @media (min-width: 768px) {
-  .head .head__nav .head__nav__titulo {
+  #body__grid .head .head__nav .head__nav__titulo {
     width: 100vw;
     max-width: 1200px;
     min-width: 768px;
@@ -78,7 +81,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  .head .head__nav .head__nav__titulo img {
+  #body__grid .head .head__nav .head__nav__titulo img {
     animation: rotate-scale-up-diag-1 3s linear both infinite;
   }
   @keyframes rotate-scale-up-diag-1 {
@@ -92,25 +95,25 @@
       transform: scale(0.5) rotate3d(1, 1, 0, -360deg);
     }
   }
-  .head .head__nav .head__nav__titulo p {
+  #body__grid .head .head__nav .head__nav__titulo p {
     display: grid;
     align-items: flex-end;
     align-self: flex-end;
   }
-  .head .head__nav .head__nav__titulo h1 {
+  #body__grid .head .head__nav .head__nav__titulo h1 {
     font-size: 44px;
   }
-  .head .head__nav .head__nav__link {
+  #body__grid .head .head__nav .head__nav__link {
     justify-self: center;
     align-self: center;
   }
-  .head .head__nav .head__nav__link ul li {
+  #body__grid .head .head__nav .head__nav__link ul li {
     float: right;
     margin-right: 20px;
     -webkit-animation: rotate-vert-center 1.5s;
     animation: rotate-vert-center 1.5s;
   }
-  .head .head__nav .head__nav__link ul li a:hover {
+  #body__grid .head .head__nav .head__nav__link ul li a:hover {
     background-color: #0093E9;
     background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
     border-radius: 10%;
@@ -143,8 +146,8 @@
 .main {
   background-image: url(/img/img\ header.jpg);
   background-size: cover;
-  border-radius: 2%;
   display: grid;
+  width: 100vw;
 }
 .main section article #imagen {
   text-align: center;
@@ -190,7 +193,6 @@
   font-size: 13.3333333333px;
   font-family: "Fuzzy Bubbles", cursive;
   border-bottom: 8px solid rgb(56, 101, 116);
-  border-radius: 5%;
 }
 .main section article #resert button:hover {
   background-color: #0093E9;
@@ -228,9 +230,10 @@
     align-content: center;
   }
   #imagen img {
-    width: 100vw;
+    width: 50px;
     justify-self: center;
     align-self: center;
+    margin: 30px;
     -webkit-animation: rotate-diagonal-1 1.5s linear both;
     animation: rotate-diagonal-1 1.5s linear both;
   }
@@ -274,8 +277,9 @@
   grid-template-areas: "p" "buttom";
   background-color: #0093E9;
   background-image: linear-gradient(135deg, #0093E9 0%, #80D0C7 50%, #ffffff 100%);
-  border-radius: 2%;
   width: 100vw;
+  margin: 0px;
+  padding: 0%;
 }
 #footer .footer__p {
   grid-area: p;
@@ -285,7 +289,6 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
-  margin: 5px;
 }
 #footer .footer__p p {
   text-align: center;
@@ -306,10 +309,7 @@
   box-sizing: border-box;
 }
 #footer .footer__div .card button {
-  justify-self: center;
-  align-self: center;
   padding: 5px;
-  margin-top: 10px;
   width: 140px;
   height: 40px;
   font-size: 13.3333333333px;
@@ -317,7 +317,10 @@
   border-bottom: 8px solid rgb(56, 101, 116);
   border-radius: 5%;
 }
-#footer .footer__div .card button:hover {
+#footer .footer__div .card button a {
+  font-family: "Fuzzy Bubbles", cursive;
+}
+#footer .footer__div .card button a:hover {
   background-color: #0093E9;
   background-image: linear-gradient(135deg, #05649b 0%, #539b93 50%, #e58888 100%);
   border-radius: 5%;
@@ -349,7 +352,6 @@
     overflow: hidden;
     position: relative;
     box-sizing: border-box;
-    margin: 5px;
     background-color: black;
   }
   #footer .footer__p {
@@ -371,7 +373,6 @@
     justify-content: right;
     width: 25vw;
     height: 5vw;
-    margin-top: 20px;
   }
   #footer .footer__div .car button a {
     font-size: 20px;
@@ -388,6 +389,7 @@
     height: 20vw;
   }
   #footer .footer__div .footer__div__a ul li {
+    float: right;
     display: flex;
     align-self: center;
     justify-content: center;
@@ -395,6 +397,34 @@
   #footer .footer__div .footer__div__a ul li a img {
     width: 80px;
   }
+}
+section h2 {
+  text-align: center;
+  color: blue;
+  font-size: 40px;
+  font-family: "Fuzzy Bubbles", cursive;
+}
+section p {
+  text-align: center;
+  color: blue;
+  font-size: 20px;
+  font-family: "Fuzzy Bubbles", cursive;
+}
+section .servicio {
+  width: 80vw;
+  max-width: 768px;
+  min-width: 320px;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.carrousel .tamanio_img {
+  width: 500px;
+  height: 380px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
