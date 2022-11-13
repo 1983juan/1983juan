@@ -393,20 +393,53 @@
     display: flex;
     align-self: center;
     justify-content: center;
+    margin-top: 10px;
+    width: 50px;
+    -webkit-animation: rotate-diagonal-1 1.5s linear both;
+    animation: rotate-diagonal-1 1.5s linear both;
   }
-  #footer .footer__div .footer__div__a ul li a img {
-    width: 80px;
+  @-webkit-keyframes rotate-diagonal-1 {
+    0% {
+      -webkit-transform: rotate3d(1, 1, 0, 0deg);
+      transform: rotate3d(1, 1, 0, 0deg);
+    }
+    50% {
+      -webkit-transform: rotate3d(1, 1, 0, -180deg);
+      transform: rotate3d(1, 1, 0, -180deg);
+    }
+    100% {
+      -webkit-transform: rotate3d(1, 1, 0, -360deg);
+      transform: rotate3d(1, 1, 0, -360deg);
+    }
+  }
+  @keyframes rotate-diagonal-1 {
+    0% {
+      -webkit-transform: rotate3d(1, 1, 0, 0deg);
+      transform: rotate3d(1, 1, 0, 0deg);
+    }
+    50% {
+      -webkit-transform: rotate3d(1, 1, 0, -180deg);
+      transform: rotate3d(1, 1, 0, -180deg);
+    }
+    100% {
+      -webkit-transform: rotate3d(1, 1, 0, -360deg);
+      transform: rotate3d(1, 1, 0, -360deg);
+    }
   }
 }
 section h2 {
   text-align: center;
-  color: blue;
-  font-size: 40px;
+  color: rgb(110, 248, 229);
+  font-size: 26.6666666667px;
   font-family: "Fuzzy Bubbles", cursive;
+  padding: 10px;
+}
+section h2 button {
+  color: rgb(110, 248, 229);
 }
 section p {
   text-align: center;
-  color: blue;
+  color: rgb(110, 248, 229);
   font-size: 20px;
   font-family: "Fuzzy Bubbles", cursive;
 }
@@ -425,6 +458,43 @@ section .servicio {
   height: 380px;
   margin-top: 5px;
   margin-bottom: 10px;
+}
+
+.row {
+  margin: 5px;
+}
+.row #principal div label {
+  color: rgb(8, 109, 112);
+}
+.row #principal div p {
+  color: rgb(8, 109, 112);
+}
+.row #principal div span {
+  color: rgb(8, 109, 112);
+}
+.row .animacion {
+  -webkit-animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate-reverse;
+  animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate-reverse;
+}
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

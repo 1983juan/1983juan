@@ -4,8 +4,12 @@ section{
     h2{
         text-align: variable.$center;
         color: variable.$colortitulo;
-        font-size: variable.$tamanoh;
+        font-size: (variable.$tamanoh)/1.5;
         font-family: variable.$tipoletra;
+        padding: 10px;
+        button{
+            color: variable.$colortitulo;
+        }
     }
     p{
         text-align: variable.$center;
