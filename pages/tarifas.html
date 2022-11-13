@@ -12,7 +12,7 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <!-- CSS MAIN-->
-    <link rel="stylesheet" href="../stilos.css/stilos.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <body id="body__grid">
@@ -34,108 +34,141 @@
             </div>
         </nav>
     </header>    
-    <main>
-        <div class="reservas">
-            <div  class="divprincipal">
-                    <h2>Reserva tu Turno</h2>
-                    <h3>Datos Personales</h3>
-                <form class="div__label">
-                    <div>
-                        <div>
-                            <label for="nombre">Nombre y Apellido</label>
-                            <input type="text" name="nombre" id="nombre" placeholder="Tu Nombre y Apellido" required>
-                            <label for="telefono">Telefono</label>
-                            <input type="number" name="telefono" id="telefono" placeholder="Tu Telefono" required>
-                            <label for="email">Email</label>
-                            <input type="text" name="email" id="email" placeholder="tu E-mail">
-                            <p>Que de Servicio Buscas</p>
-                            <span>Consultorio</span>
+    <main class="main">
+        <section>
+            <div class="container">
+                <h2 class="text-center">Reserva tu Turno</h2>
+                <div class="row">
+                    <div id="principal" class="col-sm-12 col-md-6">
+                        <div class="mb-3 col-sm-12 col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label text-danger">Nombre y Apellido</label>
+                            <input type="nombre_apellido" class="form-control" id="exampleFormControlInput1" placeholder="Tu Nombre" required>
+                        </div>
+                        <div class="mb-3 col-sm-12 col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label text-danger">Telefono de Contacto</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Tu Numero" required> 
+                        </div>           
+                        <div class="mb-3 col-sm-12 col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label text-danger">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="contacto__servicio col-sm-12 col-md-6">
+                            <p class="text-danger">Tipo de Servicio Buscas</p>
+                            <span class="text-danger">Consultorio</span>
                             <input type="radio" name="servicio" id="consultario">
-                            <span>Domicilio</span>
+                            <span class="text-danger">Domicilio</span>
                             <input type="radio" name="servicio" id="domicilio">
                         </div>
-                        <div>
-                            <label for="edad">Edad</label>
-                            <input type="number" name="edad" id="edad" placeholder="Tu Edad" required>
+                        <div class="mb-3 col-sm-12 col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label text-danger">Tu Edad</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Tu Edad" required> 
                         </div>
-                        <div>
-                            <label for="peso">Peso</label>
-                            <input type="number" name="peso" id="peso" placeholder="Tu Peso" required>
+                        <div class="mb-3 col-sm-12 col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label text-danger">Cuanto Pesas</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Tu Peso" required> 
                         </div>
-                        <div>
-                            <span>Enfermedades</span>
-                            <select name="select">
-                                <option value="opcion"></optin>
-                                <option value="opcion">Algun tipo de tumor</optin>
-                                <option value="opcion">Presión Alta</optin>
-                                <option value="opcion">Presión Baja</optin>
-                                <option value="opcion">Berrugas</optin>
-                                <option value="opcion">Hongos</optin>
-                                <option value="opcion">Varices</optin>
-                                <option value="opcion">Otras</optin>
-                                <option value="opcion">Ninguna</optin>
-                            </select>    
+                        <div class="mb-3 col-sm-12 col-md-6"> 
+                            <span class="text-danger">Enfermedades</span>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Seleccione una</option>
+                                <option value="1">Algun tipo de tumor</option>
+                                <option value="2">Presión Alta</option>
+                                <option value="3">Presión Baja</option>
+                                <option value="3">Berrugas</option>
+                                <option value="3">Hongos</option>
+                                <option value="3">Varices</option>
+                                <option value="3">Otras</option>
+                                <option value="3">Ninguna</option>
+                            </select>
                         </div>
-                        <div>
-                            <span>Tatuajes</span>
-                                <select name="tatuajes">
-                                    <option value="si">si</option>
-                                    <option value="si">no</optin>
-                                </select>
+                        <div class="contacto__servicio col-sm-12 col-md-6">
+                            <p class="text-danger">Tatuajes</p>
+                            <span class="text-danger">Si</span>
+                            <input type="radio" name="servicio" id="si">
+                            <span class="text-danger">NO</span>
+                            <input type="radio" name="servicio" id="no">
                         </div>
-                        <div class="value">
+                        <div class="contacto__boton">
                             <input type="submit" value="Enviar">
                             <input type="submit" value="Reset">
+                        </div>  
+                </div>           
+                <div class="col-sm-12 col-md-6 text-center d-none d-md-block">
+                    <div class="row">
+                    <div class="col text-danger fs-4">
+                    Tipo de Masaje
+                    </div>
+                    <div class="col text-danger fs-4">
+                    Valor x 30´
+                    </div>
+                    <div class="col text-danger fs-4">
+                    Valor x 50´
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col text-danger fs-4">
+                        Relajante
+                    </div>
+                    <div class="col text-danger fs-4">
+                        $2000.-
+                    </div>
+                    <div class="col text-danger fs-4">
+                        $2500.-
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-danger fs-4">
+                            Descontr.
+                        </div>
+                        <div class="col text-danger fs-4">
+                            $2500.-
+                        </div>
+                        <div class="col text-danger fs-4">
+                            $3000.-
                         </div>
                     </div>
-                </form>
-            </div>   
-            <div class="tabla">
-                <table border="" bgcolor="grey" with="900">
-                    <tr> 
-                        <th bgcolor="red" with="100">Tipos de masajes</th>
-                        <th bgcolor="red" with="100">$x 30 minutos</th>
-                        <th bgcolor="red" with="100">$x 50 minutos</th>
-                    </tr>
-                    <tr>
-                        <th with="100">Relajante</th>
-                        <th with="100">$2000</th>
-                        <th with="100">$2500</th>
-                    </tr>
-                    <tr>
-                        <th with="100">Descontracturante</th>
-                        <th with="100">$2500</th>
-                        <th with="100">$3000</th>
-                    </tr>
-                    <tr>
-                        <th with="100">Sedativos</th>
-                        <th with="100">$2000</th>
-                        <th with="100">$2200</th>
-                    </tr>
-
-                    <tr>
-                        <th with="100">Vendas Frias</th>
-                        <th with="100">$2000</th>
-                        <th with="100">$2200</th>
-                    </tr>
-                </table>
-            </div>
-        </div>  
-    </main>
-    <footer id="footer">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem alias sed, corporis error nulla a sint explicabo nisi iste voluptate iusto qui, eveniet non? Ab veniam corporis facere ipsam voluptatum!</p>
-            <div class="footer__div">
-                <div class="card">
-                    <div class="card-body">
-                        <a href="#head__index" class="btn btn-primary">INICIO</a>
+                    <div class="row">
+                        <div class="col text-danger fs-4">
+                            Sedativos
+                        </div>
+                        <div class="col text-danger fs-4">
+                            $2000.-
+                        </div>
+                        <div class="col text-danger fs-4">
+                            $2200.-
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-danger fs-4">
+                            Vendas Frias
+                        </div>
+                        <div class="col text-danger fs-4">
+                            $2000.-
+                        </div>
+                        <div class="col text-danger fs-4">
+                            $2200.-
+                        </div>
                     </div>
                 </div>
-                <div class="footer__div__a">
-                    <a href="https://www.instagram.com/invites/contact/?i=11nitxhim9tmo&utm_content=mva9o3m" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384886.png"></a>
-                    <a href="https://m.facebook.com/login/?locale=es_ES" target="_blank"><img src="https://img.freepik.com/psd-gratis/cuadrado-3d-logotipo-facebook_125540-1565.jpg?w=1060&t=st=1667006348~exp=1667006948~hmac=785f2675f03ae3d8794e5c15474aa77102dce5efa3bf5a95582f412efbc7dd30"></a>
-                    <a href="https://web.whatsapp.com/" target="_blank"><img src="https://e.rpp-noticias.io/normal/2020/07/01/385338_964362.png"></a>
-                </div>
-            </div>    
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer__p">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem alias sed, corporis error nulla a sint explicabo nisi iste voluptate iusto qui, eveniet non? Ab veniam corporis facere ipsam voluptatum!</p>
+        </div>
+        <div class="footer__div">
+            <div class="car">
+                <button><a href="/index.html" class="text-primary">INICIO</a></button>
+            </div>
+            <div class="footer__div__a">
+                <ul>
+                    <li><a href="https://www.instagram.com/invites/contact/?i=11nitxhim9tmo&utm_content=mva9o3m" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384886.png"></a></li>
+                    <li><a href="https://m.facebook.com/login/?locale=es_ES" target="_blank"><img src="https://img.freepik.com/psd-gratis/cuadrado-3d-logotipo-facebook_125540-1565.jpg?w=1060&t=st=1667006348~exp=1667006948~hmac=785f2675f03ae3d8794e5c15474aa77102dce5efa3bf5a95582f412efbc7dd30"></a></li>
+                    <li><a href="https://web.whatsapp.com/" target="_blank"><img src="https://e.rpp-noticias.io/normal/2020/07/01/385338_964362.png"></a></li>  
+                </ul>
+            </div>
+        </div>    
     </footer>
 </body>
 </html>
